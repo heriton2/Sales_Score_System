@@ -1,0 +1,6 @@
+applicationType: default
+defaultPackage: com.sales
+testFramework: junit
+sourceLanguage: java
+buildTool: gradle
+features: [ annotation-api, app-name, gradle, hibernate-jpa, hibernate-validator, http-client, java, java-application, jdbc-hikari, junit, mysql, netty-server, readme, shade, slf4j-simple, testcontainers, yaml ]
