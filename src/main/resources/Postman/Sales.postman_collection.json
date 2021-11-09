@@ -1,0 +1,195 @@
+{
+	"info": {
+		"_postman_id": "93cbf29b-9b50-467d-9209-c310917a9e87",
+		"name": "Sales",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "InsertProduct",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"product\":{\r\n    \"name\": \"Mouse\",\r\n    \"price\": \"60.00\"\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/Product/InsertAProduct",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Product",
+						"InsertAProduct"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllProducts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/Product/GetAllProducts",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Product",
+						"GetAllProducts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "InsertASalesman",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"salesman\": {\r\n        \"matriculaId\": \"3\",\r\n        \"name\": \"Maria Ana Soares\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/Salesman/InsertASalesman",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Salesman",
+						"InsertASalesman"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllSalesmans",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/Salesman/GetAllSalesmans",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Salesman",
+						"GetAllSalesmans"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetProductById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/Product/GetProductById?id=1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Product",
+						"GetProductById"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetSalesmanById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/Salesman/GetSalesmanById?id=3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Salesman",
+						"GetSalesmanById"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "rankingSellersCount",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/Sales/rankingSellersCount",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Sales",
+						"rankingSellersCount"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "rankingSellersByAmount",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/Sales/rankingSellersByAmount",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Sales",
+						"rankingSellersByAmount"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
