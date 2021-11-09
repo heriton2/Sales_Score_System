@@ -2,6 +2,7 @@ package com.sales.controller;
 
 import com.sales.interfaces.service.ISalesmanService;
 import com.sales.model.Salesman;
+import io.micronaut.context.annotation.Parameter;
 import io.micronaut.http.MediaType;
 import io.micronaut.http.annotation.Controller;
 import io.micronaut.http.annotation.Delete;
@@ -33,8 +34,8 @@ public class SalesmanController {
         return this.salesmanService.validateAndInsertSalesmansList(salesmans);
     }
 
-    @Get(uri = "/GetSalesmanById", produces = MediaType.APPLICATION_JSON)
-    public Optional<Salesman> getSalesmanById(Long id) throws Exception {
+    @Get(uri = "/GetSalesmanById", consumes = MediaType.APPLICATION_JSON, produces = MediaType.APPLICATION_JSON)
+    public Optional<Salesman> getSalesmanById(@Parameter @Valid Long id) throws Exception {
         return this.salesmanService.getSalesmanById(id);
     }
 

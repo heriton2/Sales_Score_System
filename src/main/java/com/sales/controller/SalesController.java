@@ -35,5 +35,5 @@ public class SalesController {
     }
 
     @Get(uri = "rankingSellersCount", consumes = MediaType.APPLICATION_JSON, produces = MediaType.APPLICATION_JSON)
-    public List rankingSellersCount(){return this.rankingSellersCount();}
+    public List rankingSellersCount(){return this.salesService.rankingSellersCount();}
 }

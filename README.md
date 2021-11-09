@@ -9,6 +9,7 @@
 
 O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
 
+- [x] Criar dockerfile
 - [x] Incluir mais funcionalidades
 - [x] Realizar testes unitários com mínimo de 80% de coverage
 - [x] Incluir segurança
@@ -18,31 +19,29 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 Antes de começar, verifique se você atendeu aos seguintes requisitos:
 * Ter o Java 11 instalado.
 * Ter uma máquina `<Windows / Linux / Mac>`.
+* Ter o Postman instalado.
+* Ter o MySql instalado.
 
 ## 🚀 Instalando Sales Score System
 
 Para instalar o Sales Score System, siga estas etapas:
 
-Linux e macOS:
-```
-<comando_de_instalação>
-```
+Windows, Linux ou macOs:
 
-Windows:
+Realizar o clone do projeto: ```git clone https://github.com/heriton2/Sales_Score_System.git```
 
-Realizar o clone do projeto: ``````
+Importar para sua IDE de preferência como projeto Micronault ou gradle.
 
-```
-<comando_de_instalação>
-```
 
-## ☕ Usando <nome_do_projeto>
 
-Para usar <nome_do_projeto>, siga estas etapas:
+Para rodar a aplicação utilize o comando: ```gradle run```
 
-```
-<exemplo_de_uso>
-```
+## ☕ Usando Sales Score System
+
+Para usar Sales Score System, siga estas etapas:
+
+No seu postman, importe a collection presente na raíz do projeto `Sales/src/main/resources/postman`
+
 
 Adicione comandos de execução e exemplos que você acha que os usuários acharão úteis. Fornece uma referência de opções para pontos de bônus!
 

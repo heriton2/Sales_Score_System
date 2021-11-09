@@ -21,7 +21,7 @@ public abstract class ISalesRepository implements CrudRepository<Sales, Long> {
         return entityManager.createQuery("SELECT m.name, m.matriculaId FROM Sales s " +
                         "join Salesman m on s.salesman.id = m.id " +
                         "group by m.id " +
-                        "order by SUM(s.amount)")
+                        "order by SUM(s.amount) desc ")
                 .getResultList();
     }
 
@@ -30,7 +30,7 @@ public abstract class ISalesRepository implements CrudRepository<Sales, Long> {
         return entityManager.createQuery("SELECT  m.name, m.matriculaId FROM Sales s " +
                         "join Salesman m on s.salesman.id = m.id " +
                         "group by m.id " +
-                        "order by COUNT(s.id)")
+                        "order by COUNT(s.id) desc")
                 .getResultList();
     }
 }
